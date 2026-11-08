@@ -1,6 +1,6 @@
 // PenguinAnalyzer.java
-// D. Singletary
-// 3/14/25
+// Juwan Burden
+// 11/08/26
 // Handles file reading, processing, and writing of penguin data
 
 package edu.fscj.cop2800c.penguin;
@@ -69,7 +69,7 @@ public class PenguinAnalyzer {
                 // Ensure correct column count
                 if (tokens.length >= 7) {
                     try {
-                        int sampleNumber = 
+                        int sampleNum = 
                             Integer.parseInt(tokens[0].trim());
                         String species = 
                             tokens[1].trim();
@@ -85,7 +85,7 @@ public class PenguinAnalyzer {
                             tokens[6].trim();
     
                         // Ensure constructor order matches attribute order
-                        Penguin penguin = new Penguin(sampleNumber, species, 
+                        Penguin penguin = new Penguin(sampleNum, species, 
                                 culmenLength, culmenDepth, 
                                 bodyMass, sex, flipperLength);
                         penguinList.add(penguin);
